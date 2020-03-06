@@ -1,0 +1,47 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-rows: 5rem auto 5rem;
+}
+/*Header /////////////////////////////////////////////*/
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  color: whitesmoke;
+  text-shadow: 1px 1px 3px black;
+  background-color: #1b35aa;
+}
+
+/*Main ///////////////////////////////////////////////*/
+#main-content {
+  display: grid;
+  grid-template-columns: 13rem auto;
+}
+
+#restaurant-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+#restaurant-map {
+  height: auto;
+  width: auto;
+}
+
+/*Footer ///////////////////////////////////////////////////////////*/
+#footer {
+  background-color: #1b35aa;
+}
