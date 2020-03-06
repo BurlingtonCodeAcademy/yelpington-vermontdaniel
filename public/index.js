@@ -29,13 +29,13 @@ async function getRests() {
     let restAddress = rest.address;
 
     //Place Marker based on restaurant address and on hover give restaurant name
-    placeRestMarker(restAddress, restName);
+    placeRestMarkers(restAddress, restName);
   });
 
 }
 
-//Set Pin on Map, with name, and on click will go to seperate page
-function placeRestMarker(restAddress, restName, restId) {
+//Set Pin on Map, with name, and on click will go to separate page
+function placeRestMarkers(restAddress, restName, restId) {
   //Get restaurant lat, lon from address
   fetch(`https://nominatim.openstreetmap.org/search/?q=${restAddress}&format=json`)
     .then(response => {
