@@ -20,7 +20,7 @@ async function getRests() {
   restList.forEach(rest => {
     let restId = rest.id;
     let restName = rest.name;
-    restListContainer.innerHTML += `<li><a href="restaurant/${restId}">${restName}</a></li>`;
+    restListContainer.innerHTML += `<li><button type="button" class="restaurant-list-button" onclick='window.location.href="/restaurant/${restId}"'>${restName}</button></li>`;
   });
 
   //Get address for every restaurant
@@ -31,7 +31,6 @@ async function getRests() {
     //Place Marker based on restaurant address and on hover give restaurant name
     placeRestMarkers(restAddress, restName);
   });
-
 }
 
 //Set Pin on Map, with name, and on click will go to separate page
