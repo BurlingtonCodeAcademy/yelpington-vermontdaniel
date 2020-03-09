@@ -65,3 +65,9 @@ function placeRestMarkers(restAddress, restName, restId) {
 }
 
 getRests();
+
+//local storage
+//fetch('./api/all.json')
+
+let query= window.location.search
+let id= query.split
