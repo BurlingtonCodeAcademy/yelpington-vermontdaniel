@@ -126,7 +126,6 @@ body {
   padding-right: 2rem;
   background-color: #90fca8;
   border: 1px solid #87f5ff;
-
 }
 
 #restaurant-name {
@@ -147,6 +146,7 @@ body {
   color: whitesmoke;
   text-shadow: -1.5px -1.5px 2px #000000, 1.5px -1.5px 2px #000000, -1.5px 1.5px 2px #000000, 1.5px 1.5px 2px #000000;
   z-index: 1;
+  overflow-wrap: break-word;
 }
 
 #restaurant-map {
