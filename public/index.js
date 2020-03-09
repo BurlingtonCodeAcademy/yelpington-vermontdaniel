@@ -27,9 +27,10 @@ async function getRests() {
   restList.forEach(rest => {
     let restName = rest.name;
     let restAddress = rest.address;
+    let restId = rest.id;
 
     //Place Marker based on restaurant address and on hover give restaurant name
-    placeRestMarkers(restAddress, restName);
+    placeRestMarkers(restAddress, restName, restId);
   });
 }
 
@@ -58,7 +59,7 @@ function placeRestMarkers(restAddress, restName, restId) {
       });
       //When clicking on pin, go to page
       thisMarker.on('click', () => {
-        window.location = `/restaurant/:${restId}`;
+        window.location.href = `/restaurant/${restId}`;
       });
     });
 }
