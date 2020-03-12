@@ -1,0 +1,182 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+body {
+  display: grid;
+  width: auto;
+  height: 100vh;
+  grid-template-rows: 5rem auto 5rem;
+}
+
+/*Header //////////////////////////////////////////////////////////*/
+#header {
+  display: grid;
+  grid-template-columns: 7rem 7rem 7rem auto;
+  background-color: #87f5ff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23547ccc' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%2361cdff' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23566fbf' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%2301c4e2' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%235861b2' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%2300b8bc' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%235954a4' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%2300aa90' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23594796' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23379a63' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23593987' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23558838' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header-button {
+  border: none;
+  background: none;
+  font-size: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+  color: rgba(245, 245, 245, 0.479);
+  text-shadow: -0.5px -0.5px 0 #000000, 0.5px -0.5px 0 #000000, -0.5px 0.5px 0 #000000, 0.5px 0.5px 0 #000000;
+}
+
+.header-button:hover {
+  color: whitesmoke;
+  transform: scale(1.5);
+  transition: ease-out 0.2s;
+}
+
+/*Home Button *************************************************************/
+#home {
+  border-top-left-radius: 1rem;
+}
+
+/*Restaurant Drop Down Menu ***********************************************/
+#restaurant-drop-down-menu {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+#restaurant-button {
+  height: 100%;
+  width: 100%;
+}
+
+#restaurant-drop-down-menu:hover #restaurant-list {
+  display: flex;
+}
+
+#restaurant-list {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  list-style-type: none;
+  z-index: 2;
+  width: 14rem;
+  padding: 1rem;
+  background-color: whitesmoke;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow: 5px 5px 5px black;
+}
+
+.restaurant-list-button {
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-variant: small-caps;
+  font-weight: 600;
+  border: none;
+  color: #000000;
+}
+
+.restaurant-list-button:hover {
+  color: rgb(204, 23, 23);
+  transform: scale(1.1);
+  transition: ease-out 0.2s;
+}
+
+/*Title ************************************************************/
+#title {
+  align-self: center;
+  font-size: 3rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  color: rgb(255, 211, 144);
+  text-shadow: -1.5px -1.5px 0 #000000, 1.5px -1.5px 0 #000000, -1.5px 1.5px 0 #000000, 1.5px 1.5px 0 #000000;
+  padding-left: 12rem;
+}
+
+/*Contact Drop Down Menu *******************************************/
+#contact-drop-down-menu {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-left: 2rem;
+}
+
+#contact-drop-down-menu:hover #contact-input {
+  display: flex;
+}
+
+#contact-button {
+  height: 100%;
+  width: 100%;
+}
+
+#contact-input {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  list-style-type: none;
+  z-index: 2;
+  width: 14rem;
+  padding: 1rem;
+  background-color: whitesmoke;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow: 5px 5px 5px black;
+}
+
+#contact-message {
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-variant: small-caps;
+  font-weight: 600;
+  border: none;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+#name-input {
+  margin-bottom: 1rem;
+}
+
+#email-input {
+  margin-bottom: 1rem;
+}
+
+#message-input {
+  resize: none;
+  height: 6rem;
+  margin-bottom: 1rem;
+}
+
+/*Main ////////////////////////////////////////////////////////////*/
+#main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #87f5ff;
+  border-right: 1px solid #87f5ff;
+}
+
+#restaurant-map {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+/*Footer ///////////////////////////////////////////////////////////*/
+#footer {
+  background-color: #87f5ff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23547ccc' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%2361cdff' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23566fbf' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%2301c4e2' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%235861b2' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%2300b8bc' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%235954a4' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%2300aa90' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23594796' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23379a63' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23593987' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23558838' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}

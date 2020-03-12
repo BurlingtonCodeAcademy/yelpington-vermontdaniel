@@ -4,8 +4,5 @@
   "address": "160 Bank St. Burlington, VT 05401",
   "phone": "859-0888",
   "website": "http://www.farmhousetg.com",
-  "notes": [
-    "A member of the Farmhouse group",
-    "Localy sourced produce, and meat."     
-  ]
+  "notes": ["A member of the Farmhouse group", "Localy sourced produce, and meat."]
 }
